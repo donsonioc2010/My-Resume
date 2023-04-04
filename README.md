@@ -1,71 +1,33 @@
-# Getting Started with Create React App
+# Resume
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 제작 계기...
 
-## Available Scripts
+[기존 이력서](https://github.com/donsonioc2010/resume2) 같은 경우 fork를 떠와서 적당히 내상황에 맞게 기록을 했던 Resume 이력서 페이지이다.
+그러다 보니 TypeScript, React, Next.js에 모두 무지했던 내가 관리하기에는 버거운 이력서가 되버림.
 
-In the project directory, you can run:
+그러다 보니 파일이 꼬였는데.. 어디부터 꼬였는지 모르겠더라...
 
-### `npm start`
+그런김에 그냥 React를 다시 학습할겸, 내가 보기 편한 Resume를 다시 만들면서 익혀가는게 재밌겠다 생각하여 만들게 된 Resume
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Domain
 
-### `npm test`
+- [이력서 주소](resume.jong1.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 생각했던 포인트?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 코드를 모르는 사람도 이해할 수 있게 최대한 단순하게
+- 정보전달은 쉽게
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> 단 두가지만 최대한 신경쓰면서 개발을 진행함
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# My-Resume
+- https://github.com/uyu423/resume-nextjs
+  - 아무래도..기존 Resume에 영향을 많이 받았다...
+  - 감사합니다..
