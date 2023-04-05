@@ -13,7 +13,9 @@
 
 ## Domain
 
-- [이력서 주소](resume.jong1.com)
+> 아직 서버 안띄웠다...
+
+- [이력서 주소](https://resume.jong1.com)
 
 ---
 
