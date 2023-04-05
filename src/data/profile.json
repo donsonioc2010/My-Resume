@@ -1,0 +1,33 @@
+{
+  "name": {
+    "title": "김종원",
+    "small": "(Jong1)"
+  },
+  "profile": {
+    "img": "jong1.jpg"
+  },
+  "contact": {
+    "email": {
+      "title": "whddnjs822Gmail.com",
+      "link": "#"
+    },
+    "phone": "please contact me by email",
+    "github": {
+      "title": "github Link",
+      "link": "#"
+    },
+    "blog": {
+      "title": "Blog Link",
+      "link": "#"
+    },
+    "insta": {
+      "title": "Insta Link",
+      "link": "#"
+    },
+    "linkedin": {
+      "title": "Linked In",
+      "link": "#"
+    }
+  },
+  "info-notice": "연락은 이메일을 통해서 부탁드립니다"
+}
