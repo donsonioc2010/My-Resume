@@ -127,7 +127,11 @@ function ContactList() {
     <Row>
       <Col className="pt-3">
         {contactAry.map((contact, index) => {
-          return <ContactDetail key={index.toString()} info={contact} />;
+          if (contact.title === undefined || contact.title === '') {
+            return null;
+          } else {
+            return <ContactDetail key={index.toString()} info={contact} />;
+          }
         })}
       </Col>
     </Row>
@@ -144,6 +148,9 @@ function InfoNoticeArea() {
   const notice = useSelector((state) => {
     return state.notice;
   });
+  if (notice.title === '' || notice.title === '#') {
+    return null;
+  }
   return (
     <Row>
       <Col>
