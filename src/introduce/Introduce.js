@@ -28,10 +28,10 @@ export default function Introduce() {
   return (
     <div className="mt-5">
       <Row>
-        <Col sm={12} md={3}>
+        <Col sm={12} md={2}>
           <h2 style={Style.blue}>Introduce</h2>
         </Col>
-        <Col sm={12} md={9}>
+        <Col sm={12} md={10}>
           <Provider store={store}>
             <IntroduceDetail />
           </Provider>
@@ -62,9 +62,9 @@ function ListTypeComponent() {
     <ul>
       {introduces.map((introduce, index) => {
         if (Array.isArray(introduce)) {
-          return <ListArySentence introduces={introduce} />;
+          return <ListArySentence introduces={introduce} number={(index + 1) * 10} />;
         } else {
-          return <TemplateLi content={introduce} index={index} />;
+          return <TemplateLi content={introduce} index={index + 1} />;
         }
       })}
     </ul>
@@ -72,14 +72,14 @@ function ListTypeComponent() {
 }
 function ListArySentence(props) {
   var subIntroduces = props.introduces;
-
+  var number = props.number;
   return (
     <ul>
       {subIntroduces.map((introduce, index) => {
         if (Array.isArray(introduce)) {
-          return <ListArySentence introduces={introduce} />;
+          return <ListArySentence introduces={introduce} number={number * 10 + (index + 1) * 10} />;
         } else {
-          return <TemplateLi content={introduce} index={index} />;
+          return <TemplateLi content={introduce} index={number + (index + 1)} />;
         }
       })}
     </ul>
@@ -88,7 +88,6 @@ function ListArySentence(props) {
 function TemplateLi(props) {
   var content = props.content;
   var i = props.index;
-
   return (
     <li key={i.toString()}>
       <b dangerouslySetInnerHTML={{ __html: content }}></b>
@@ -100,5 +99,11 @@ function SentenceTypeComponent() {
   var introduces = useSelector((state) => {
     return state.introduces;
   });
-  return <div>Sentence : {introduces}</div>;
+  return introduces.map((introduce, index) => {
+    return (
+      <p key={index.toString()}>
+        <b dangerouslySetInnerHTML={{ __html: introduce }}></b>
+      </p>
+    );
+  });
 }
