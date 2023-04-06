@@ -6,11 +6,12 @@ import { faGithub, faBlogger, faLinkedinIn } from '@fortawesome/free-brands-svg-
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import pd from 'data/Profile.json';
-import { Col, Row } from 'react-bootstrap';
+import { Alert, Col, Row } from 'react-bootstrap';
 import { Style } from 'common/Style';
 import 'profile/Profile.css';
 import Profile from 'profile/Profile';
 import ContactDetail from 'profile/ContactDetail';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /**
  * 연락처 정보를 표현하기 위한 Component
@@ -133,9 +134,29 @@ function ContactList() {
   );
 }
 
+/*
+  notice: {
+    title: pd.infoNotice,
+    icon: faBell,
+  },
+*/
 function InfoNoticeArea() {
   const notice = useSelector((state) => {
     return state.notice;
   });
-  return <div></div>;
+  return (
+    <Row>
+      <Col>
+        <Alert
+          role="alert"
+          color="secondary"
+          className="mt-3 alert-secondary"
+          style={{ color: 'black' }}
+        >
+          {notice.icon ? <FontAwesomeIcon icon={notice.icon} className="mr-2" /> : ''}
+          <b>{'  ' + notice.title}</b>
+        </Alert>
+      </Col>
+    </Row>
+  );
 }

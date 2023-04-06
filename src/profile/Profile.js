@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 
 export default function Profile() {
-  const style = { maxHeight: '320px' };
+  const style = { maxHeight: '400px' };
   const imgFileName = useSelector((state) => {
     return state.img;
   });

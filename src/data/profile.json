@@ -29,10 +29,5 @@
       "link": "https://www.linkedin.com/in/jong-won-kim"
     }
   },
-  "infoNotice": "연락은 이메일을 통해서 부탁드립니다",
-  "introduce": {
-    "type": "LIST",
-    "data": ["안녕하세요", "쏘주쟁이입니다."]
-  },
-  "latestUpdatedAt": "1999-09-09"
+  "infoNotice": "연락은 이메일을 통해서 부탁드립니다"
 }

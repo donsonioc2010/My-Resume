@@ -4,4 +4,5 @@ div#global {
   overflow-wrap: break-word;
   word-break: keep-all;
   line-height: 1.8;
+  margin-top: 40px;
 }
