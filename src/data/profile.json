@@ -8,26 +8,31 @@
   },
   "contact": {
     "email": {
-      "title": "whddnjs822Gmail.com",
+      "title": "whddnjs822@gmail.com",
       "link": "#"
     },
-    "phone": "please contact me by email",
-    "github": {
-      "title": "github Link",
-      "link": "#"
+    "phone": "이메일을 통한 연락 부탁드립니다.",
+    "git": {
+      "title": "https://github.com/donsonioc2010",
+      "link": "https://github.com/donsonioc2010"
     },
     "blog": {
-      "title": "Blog Link",
-      "link": "#"
+      "title": "https://devjong12.tistory.com/",
+      "link": "https://devjong12.tistory.com/"
     },
     "insta": {
-      "title": "Insta Link",
-      "link": "#"
+      "title": "https://www.instagram.com/jong1_822/",
+      "link": "https://www.instagram.com/jong1_822/"
     },
     "linkedin": {
-      "title": "Linked In",
-      "link": "#"
+      "title": "https://www.linkedin.com/in/jong-won-kim",
+      "link": "https://www.linkedin.com/in/jong-won-kim"
     }
   },
-  "info-notice": "연락은 이메일을 통해서 부탁드립니다"
+  "infoNotice": "연락은 이메일을 통해서 부탁드립니다",
+  "introduce": {
+    "type": "LIST",
+    "data": ["안녕하세요", "쏘주쟁이입니다."]
+  },
+  "latestUpdatedAt": "1999-09-09"
 }
