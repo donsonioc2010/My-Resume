@@ -134,3 +134,11 @@
 ```
 
 ![샘플예제](./readme-docs/type-sentence-introduce.png)
+
+#### Latest Updated
+
+> 해당 기능은 마지막 업데이트가 진행된 일자 및 해당 일자로부터 얼마나 경과하였는지를 표현한다.
+
+- **JSON** 파일에서 `latestUpdatedAt`항목을 `YYYY-MM-DD` 형식에 맞춰 일자를 수정하면 된다.
+
+![출력모습](./readme-docs/latest-updated.png)
