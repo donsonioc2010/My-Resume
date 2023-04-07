@@ -2,8 +2,10 @@ import React from 'react';
 import jsonData from 'data/Introduce.json';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
-import { Col, Row } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 import { Style } from 'common/Style';
+import moment from 'moment';
+import 'moment/locale/ko';
 
 var introduceData = {
   type: jsonData.type,
@@ -34,6 +36,7 @@ export default function Introduce() {
         <Col sm={12} md={10}>
           <Provider store={store}>
             <IntroduceDetail />
+            <LatestUpdatedComponent />
           </Provider>
         </Col>
       </Row>
@@ -106,4 +109,27 @@ function SentenceTypeComponent() {
       </p>
     );
   });
+}
+
+function LatestUpdatedComponent() {
+  var latestUpdated = useSelector((state) => {
+    return moment(new Date(state.latestUpdatedAt)).format('YYYY.MM.DD');
+  });
+  var nowTime = moment();
+  var latestUpdatedByNow = Math.floor(moment.duration(nowTime.diff(latestUpdated)).asDays());
+
+  var lastUpdateStyle = {
+    fontFamily: "'Parisienne', cursive",
+    fontSize: '1em',
+  };
+
+  return (
+    <p className="text-end">
+      <b>Latest Updated</b>{' '}
+      <Badge bg="secondary">
+        {' '}
+        {latestUpdated} <small>(D+{latestUpdatedByNow})</small>
+      </Badge>
+    </p>
+  );
 }
