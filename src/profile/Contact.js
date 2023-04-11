@@ -85,6 +85,9 @@ export default function Contact() {
             <ContactMethod></ContactMethod>
           </Col>
         </Row>
+        <Row Col md={12} sm={12}>
+          <InfoNoticeArea></InfoNoticeArea>
+        </Row>
       </Provider>
     </div>
   );
@@ -95,7 +98,6 @@ function ContactMethod() {
     <div id="contact-method">
       <NameArea></NameArea>
       <ContactList></ContactList>
-      <InfoNoticeArea></InfoNoticeArea>
     </div>
   );
 }
