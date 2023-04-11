@@ -142,3 +142,19 @@
 - **JSON** 파일에서 `latestUpdatedAt`항목을 `YYYY-MM-DD` 형식에 맞춰 일자를 수정하면 된다.
 
 ![출력모습](./readme-docs/latest-updated.png)
+
+---
+
+### Footer
+
+> Footer의 경우에는 해당 프로젝트 사용 Framework에 대한 기록, 내가 참고한 Resume, 내 오리지널 Github Link, 혹시나 모를 수정자의 링크정도를 담았다.
+
+> **JSON** 파일의 경우 `./src/data/Footer.json`을 활용한다
+
+> Footer Json의 경우에는 객체가 하나이며, 링크를 연결한다.  
+> `Creator Git Repository`라는 명칭으로 `Title`이 설정되어 있으나 희망하지 않는다면 `footer/footer.js`에서 직접 수정하도록 한다.  
+> 또한 원본 Git과 참고로 사용한 Resume링크는 출처이므로 남겨주면 좋을 듯 하다... (제 Git도 광고하고싶어요😂)
+
+#### 보여지는 이미지
+
+![Footer Output](./readme-docs/footer-output.png)
