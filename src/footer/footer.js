@@ -21,7 +21,7 @@ const footer = {
 };
 
 var footerData = {
-  type: jsonData.creatorGitRepo,
+  repoUrl: jsonData.creatorGitRepo,
 };
 
 export default function Footer() {
@@ -32,10 +32,7 @@ export default function Footer() {
           {/* Footer 좌측영역 */}
           <div style={footer.main} className="text-center mt-2">
             <FontAwesomeIcon icon={faGithub} style={{ paddingRight: '10px' }} />
-            <HrefTargetBlank
-              url={'https://github.com/donsonioc2010/My-Resume'}
-              title={'Creator Git Repository'}
-            />
+            <HrefTargetBlank url={footerData.repoUrl} title={'Creator Git Repository'} />
           </div>
         </Col>
         <Col sm={12} md={6}>
