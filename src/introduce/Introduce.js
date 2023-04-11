@@ -30,10 +30,9 @@ export default function Introduce() {
   return (
     <div className="mt-5">
       <Row>
-        <Col sm={12} md={2}>
-          <h2 style={Style.blue}>Introduce</h2>
-        </Col>
-        <Col sm={12} md={10}>
+        <Col sm={12} md={12}>
+          <h1 style={Style.blue}>Introduce</h1>
+          <hr />
           <Provider store={store}>
             <IntroduceDetail />
             <LatestUpdatedComponent />
