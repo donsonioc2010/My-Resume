@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import { Badge, Col, Row } from 'react-bootstrap';
 import { Style } from 'common/Style';
+import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import moment from 'moment';
 import 'moment/locale/ko';
 
@@ -31,8 +32,7 @@ export default function Introduce() {
     <div className="mt-5">
       <Row>
         <Col sm={12} md={12}>
-          <h1 style={Style.blue}>Introduce</h1>
-          <hr />
+          <StyleBlueTitleByH1AndHr title={'Introduce'} />
           <Provider store={store}>
             <IntroduceDetail />
             <LatestUpdatedComponent />
