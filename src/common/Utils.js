@@ -18,7 +18,7 @@ export function HrefTargetBlank(props) {
 
   return (
     <a href={url} style={style} target="_blank" rel="noreferrer noopener">
-      <b>{props.title || props.url}</b>
+      {props.title || props.url}
     </a>
   );
 }
@@ -27,7 +27,7 @@ export function StyleBlueTitleByH1AndHr(props) {
   var title = props.title;
 
   return (
-    <div style={Style.H1AndHrTitle}>
+    <div style={Style.blue}>
       <h1>{title}</h1>
       <hr />
     </div>

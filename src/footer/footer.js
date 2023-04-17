@@ -54,7 +54,7 @@ export default function Footer() {
       </Row>
       <Row style={footer.cover}>
         <Col>
-          <div style={footer.main} className="text-center mt-2 font-monospace">
+          <div style={footer.main} className="text-center mt-2">
             <FontAwesomeIcon icon={faReact} style={{ padding: '0 10 0 10' }} />
             v18.2.0 /
             <FontAwesomeIcon icon={faBootstrap} style={{ padding: '0 10 0 10' }} />

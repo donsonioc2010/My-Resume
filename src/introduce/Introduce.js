@@ -29,7 +29,7 @@ export default function Introduce() {
   });
 
   return (
-    <div className="mt-5">
+    <div id="introduce" className="mt-5">
       <Row>
         <Col sm={12} md={12}>
           <StyleBlueTitleByH1AndHr title={'Introduce'} />
@@ -91,7 +91,7 @@ function TemplateLi(props) {
   var content = props.content;
   var i = props.index;
   return (
-    <li key={i.toString()}>
+    <li key={'TemplateLi' + i.toString()}>
       <b dangerouslySetInnerHTML={{ __html: content }}></b>
     </li>
   );
@@ -103,7 +103,7 @@ function SentenceTypeComponent() {
   });
   return introduces.map((introduce, index) => {
     return (
-      <p key={index.toString()}>
+      <p key={'SentenceType' + index.toString()}>
         <b dangerouslySetInnerHTML={{ __html: introduce }}></b>
       </p>
     );

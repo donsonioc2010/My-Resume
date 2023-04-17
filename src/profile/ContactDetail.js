@@ -60,11 +60,7 @@ export default function ContactDetail(props) {
 
 function createContactTitle(contact) {
   if (contact.link === '' || contact.link === '#') {
-    return (
-      <span>
-        <b>{contact.title}</b>
-      </span>
-    );
+    return <span>{contact.title}</span>;
   }
   return <HrefTargetBlank url={contact.link} title={contact.title}></HrefTargetBlank>;
 }

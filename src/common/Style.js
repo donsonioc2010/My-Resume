@@ -7,4 +7,7 @@ export const Style = {
     color: '#3c78d8',
     marginTop: '20px',
   },
+  liTypeNone: {
+    listStyleType: 'none',
+  },
 };

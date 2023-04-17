@@ -163,7 +163,7 @@ function InfoNoticeArea() {
           style={{ color: 'black' }}
         >
           {notice.icon ? <FontAwesomeIcon icon={notice.icon} className="mr-2" /> : ''}
-          <b>{'  ' + notice.title}</b>
+          {'  ' + notice.title}
         </Alert>
       </Col>
     </Row>

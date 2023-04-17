@@ -1,6 +1,7 @@
+/* font-weight 300설정하니까 글씨분간히 힘들정도로 연해짐 */
 div#global {
   font-family: "'Noto Sans KR', sans-serif";
-  font-weight: 300;
+  /* font-weight: 300; */
   overflow-wrap: break-word;
   word-break: keep-all;
   line-height: 1.8;
