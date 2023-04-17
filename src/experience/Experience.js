@@ -86,10 +86,10 @@ function ExperienceRow() {
         <>
           {idx > 0 ? <hr style={{ textAlign: 'center', width: '100%', margin: '10px' }} /> : null}
           <Row md={12} xs={12} key={item.companyName + 'Row' + idx.toString()}>
-            <Col md={4} sm={12} className="align-self-center">
+            <Col md={3} sm={12}>
               <CreateCompanyInfo info={new CompanyInfo(item)} />
             </Col>
-            <Col md={8} sm={12}>
+            <Col md={9} sm={12}>
               <CreateProjects companyName={item.companyName} list={item.projects} />
             </Col>
           </Row>

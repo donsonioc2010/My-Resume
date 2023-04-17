@@ -12,13 +12,13 @@ export default function CreateProjects(props) {
       <ul>
         {projects.map((item, idx) => {
           if (!Array.isArray(item)) {
-            result.push(
+            return (
               <b>
                 <CreateLi name={companyName} content={item} index={idx + 1} />
-              </b>,
+              </b>
             );
           } else {
-            result.push(<LoopArray name={companyName} data={item} index={(idx + 1) * 10} />);
+            return <LoopArray name={companyName} data={item} index={(idx + 1) * 10} />;
           }
         })}
       </ul>,
