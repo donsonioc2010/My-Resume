@@ -147,7 +147,7 @@ function CreateBadge(props) {
   var skillLevel = skill.level;
 
   if (!skillLevel) {
-    return '';
+    return <span>👌 </span>;
   }
 
   const color = () => {
@@ -158,9 +158,8 @@ function CreateBadge(props) {
       case 2:
         return 'secondary';
       case 1:
-      default: {
+      default:
         return 'light';
-      }
     }
   };
 
