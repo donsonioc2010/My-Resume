@@ -78,7 +78,6 @@ function ThemeRow(props) {
   var themeName = props.themeName;
   var idx = props.idx;
 
-  console.log(themeName, '  ', idx);
   return (
     <>
       <Row>
