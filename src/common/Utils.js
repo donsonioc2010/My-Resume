@@ -1,3 +1,4 @@
+import moment from 'moment';
 import { Style } from './Style';
 /**
  * title의 text를 기록하며, title이 없는 경우에는 url를 삽입한다.
@@ -32,4 +33,12 @@ export function StyleBlueTitleByH1AndHr(props) {
       <hr />
     </div>
   );
+}
+
+export function getDateYYYY_MM(date) {
+  return isDateYYYY_MM(date) ? moment(new Date(date)).format('YYYY.MM') : null;
+}
+
+function isDateYYYY_MM(date) {
+  return moment(date, 'YYYY-MM', true).isValid();
 }
