@@ -82,7 +82,7 @@ function ThemeRow(props) {
   return (
     <>
       <Row>
-        {idx > 0 ? <hr style={{ textAlign: 'center', width: '100%' }} /> : null}
+        {idx > 0 ? <hr style={{ textAlign: 'center', width: '100%', margin: '10px' }} /> : null}
         <Col sm={12} md={3} className="align-self-center">
           {/* h3로 해봤는데 너무 크네.. */}
           <h4 style={{ color: 'green' }}>{themeName}</h4>
