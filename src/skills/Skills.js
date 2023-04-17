@@ -101,15 +101,16 @@ function SkillsRow(props) {
   });
   var skills = props.skills;
   var rowNum = Math.ceil(skills.length / layer);
+  var mdValue = Math.floor(12 / layer);
 
   var renderling = () => {
     var result = [];
     for (let i = 0; i < rowNum; i++) {
       //result.push(<Row className="mt-md-0 mx-auto">{colRender(i)}</Row>);
       result.push(
-        <Col md={4} xs={12} key={'Col' + i.toString()}>
-          <ul>{colRender(i)}</ul>
-        </Col>,
+        <Row md={12} xs={12} key={'Col' + i.toString()}>
+          {colRender(i)}
+        </Row>,
       );
     }
     return result;
@@ -125,10 +126,10 @@ function SkillsRow(props) {
         let skillTitle = skill.title;
         let haveLevel = skill.level ? true : false;
         colResult.push(
-          <li className={haveLevel ? 'have-level' : 'no-level'}>
+          <Col md={mdValue}>
             <CreateBadge key={idx.toString()} info={skill} />
             {skillTitle}
-          </li>,
+          </Col>,
         );
       } else {
         // skill정보가 없는 경우 (빈Line으로 넣기 위함)

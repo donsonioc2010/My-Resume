@@ -145,6 +145,18 @@
 
 ---
 
+### Skils
+
+> Skills는 `./src/data/Skills.json`의 파일을 수정하면 되며, 기록할게 많이 없어서 그냥 모습이 보이는 스크린샷만 던져 놓도록 하겠다.
+
+> `skillLayer`항목의 경우에는 라인 수를 조절 할 수 있으며, 3개 이상으로 설정해야 정상적으로 출력이 된다. 또한 가장 단정한건 3개~4개 사이로 설정하면 가장 보기좋은 디자인이 된다.
+
+> **theme**, **title**, **level로** 이뤄져있으며 **theme**, **title**은 무조건 기록해주고 level은 기록을 안해도 상관은 없다.
+
+![Skills Example](./readme-docs/skills.png)
+
+---
+
 ### Footer
 
 > Footer의 경우에는 해당 프로젝트 사용 Framework에 대한 기록, 내가 참고한 Resume, 내 오리지널 Github Link, 혹시나 모를 수정자의 링크정도를 담았다.
