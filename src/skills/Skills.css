@@ -1,0 +1,19 @@
+#skills ul {
+  padding: 0;
+}
+
+#skills li::marker {
+  /* list-style-image: 'url(/right-arrow.svg)', */
+  padding-inline-start: '1ch';
+  content: none;
+}
+
+#skills li.no-level {
+  margin-left: 1rem;
+}
+
+#skills li.no-level::marker {
+  /* list-style-image: 'url(/right-arrow.svg)', */
+  padding-inline-start: '1ch';
+  content: '👌 ';
+}

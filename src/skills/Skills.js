@@ -3,8 +3,9 @@ import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import jsonData from 'data/Skills';
 import { Style } from 'common/Style';
-import { Col, Row, Table } from 'react-bootstrap';
+import { Badge, Col, Row, Table } from 'react-bootstrap';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
+import './Skills.css';
 
 /**
  * {
@@ -122,13 +123,15 @@ function SkillsRow(props) {
       let skill = skills[idx];
       if (skill) {
         let skillTitle = skill.title;
+        let haveLevel = skill.level ? true : false;
         colResult.push(
-          <li>
+          <li className={haveLevel ? 'have-level' : 'no-level'}>
             <CreateBadge key={idx.toString()} info={skill} />
             {skillTitle}
           </li>,
         );
       } else {
+        // skill정보가 없는 경우 (빈Line으로 넣기 위함)
         colResult.push(<li style={Style.liTypeNone}></li>);
       }
     }
@@ -160,5 +163,11 @@ function CreateBadge(props) {
     }
   };
 
-  return <span></span>;
+  return (
+    <span>
+      <Badge pill color={color}>
+        {skillLevel}
+      </Badge>{' '}
+    </span>
+  );
 }
