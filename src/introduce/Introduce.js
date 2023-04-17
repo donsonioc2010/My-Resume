@@ -7,6 +7,7 @@ import { Style } from 'common/Style';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import moment from 'moment';
 import 'moment/locale/ko';
+import './Introduce.css';
 
 var introduceData = {
   type: jsonData.type,
@@ -92,7 +93,7 @@ function TemplateLi(props) {
   var i = props.index;
   return (
     <li key={'TemplateLi' + i.toString()}>
-      <b dangerouslySetInnerHTML={{ __html: content }}></b>
+      <p dangerouslySetInnerHTML={{ __html: content }}></p>
     </li>
   );
 }
@@ -104,7 +105,7 @@ function SentenceTypeComponent() {
   return introduces.map((introduce, index) => {
     return (
       <p key={'SentenceType' + index.toString()}>
-        <b dangerouslySetInnerHTML={{ __html: introduce }}></b>
+        <p dangerouslySetInnerHTML={{ __html: introduce }}></p>
       </p>
     );
   });
@@ -117,14 +118,9 @@ function LatestUpdatedComponent() {
   var nowTime = moment();
   var latestUpdatedByNow = Math.floor(moment.duration(nowTime.diff(latestUpdated)).asDays());
 
-  var lastUpdateStyle = {
-    fontFamily: "'Parisienne', cursive",
-    fontSize: '1em',
-  };
-
   return (
     <p className="text-end">
-      <b>Latest Updated</b>{' '}
+      <small>Latest Updated</small>{' '}
       <Badge bg="secondary">
         {' '}
         {latestUpdated} <small>(D+{latestUpdatedByNow})</small>
