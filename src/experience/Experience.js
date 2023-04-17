@@ -9,6 +9,7 @@ import moment, { diff } from 'moment';
 import CompanyInfo from './CompanyInfo';
 import CreateCompanyInfo from './CreateCompanyInfo';
 import CreateProjects from './CreateProjects';
+import './Experience.css';
 
 /**
  * {
@@ -89,7 +90,7 @@ function ExperienceRow() {
               <CreateCompanyInfo info={new CompanyInfo(item)} />
             </Col>
             <Col md={8} sm={12}>
-              <CreateProjects list={item.projects} />
+              <CreateProjects companyName={item.companyName} list={item.projects} />
             </Col>
           </Row>
         </>,
