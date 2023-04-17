@@ -155,18 +155,16 @@ function CreateBadge(props) {
         return 'primary';
       }
       case 2:
-        return 'secondary';
+        return 'success';
       case 1:
       default:
-        return 'light';
+        return 'danger';
     }
   };
 
   return (
     <span>
-      <Badge pill color={color}>
-        {skillLevel}
-      </Badge>{' '}
+      <Badge bg={color()}>{skillLevel}</Badge>{' '}
     </span>
   );
 }
