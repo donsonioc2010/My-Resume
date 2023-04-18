@@ -1,11 +1,21 @@
 {
   "experience": [
     {
-      "companyName": "M-Doctor",
+      "companyName": "엠닥터(M-Doctor)",
       "companyJoinDate": "2023-02",
-      "companyTeam": "개발팀",
       "companyJob": "Developer",
       "companyPosition": "사원",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "Intellij",
+        "AWS",
+        "Maria",
+        "H2",
+        "Git",
+        "Jenkins",
+        "nginx"
+      ],
       "projects": [
         "사내 개발서버 구축",
         [
@@ -32,12 +42,25 @@
       ]
     },
     {
-      "companyName": "㈜비즈웰",
+      "companyName": "㈜비즈웰(Bizwell)",
       "companyJoinDate": "2021-04",
       "companyResignDate": "2022-06",
-      "companyTeam": "기술지원팀",
       "companyJob": "Java Developer",
       "companyPosition": "사원",
+      "skills": [
+        "Java",
+        "JSP",
+        "Eclipse",
+        "Linux",
+        "Window Server",
+        "Tomcat",
+        "Resin",
+        "Scouter",
+        "Oracle",
+        "MySQL",
+        "MS-SQL",
+        "SVN"
+      ],
       "projects": [
         "담당 고객사에 납품된 전자결재 및 메신저 어플리케이션 시스템 개선 업무",
         [

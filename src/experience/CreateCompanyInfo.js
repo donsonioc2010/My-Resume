@@ -5,12 +5,9 @@ export default function CreateCompanyInfo(props) {
 
   return (
     <div key={companyInfo.name} style={{ color: 'green' }}>
-      <h4>{companyInfo.name}</h4>
-      {companyInfo.team}
-      <br />
-      {companyInfo.getJobAndPosition()} <br />
+      <h4>{companyInfo.getDateJoinToResign()}</h4>
+      {companyInfo.isResignBadge()}&nbsp;
       {companyInfo.getDurationYearAndMonth()} <br />
-      {companyInfo.getDateJoinToResign()}
     </div>
   );
 }
