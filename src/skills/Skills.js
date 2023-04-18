@@ -123,7 +123,7 @@ function SkillsRow(props) {
       let skill = skills[idx];
       if (skill) {
         let skillTitle = skill.title;
-        let haveLevel = skill.level ? true : false;
+
         colResult.push(
           <Col md={mdValue}>
             <CreateBadge key={idx.toString()} info={skill} />

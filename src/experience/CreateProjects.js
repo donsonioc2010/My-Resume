@@ -16,6 +16,7 @@ export default function CreateProjects(props) {
           <b>{companyName}</b>
         </h4>
         <small style={{ color: 'gray' }}>{companyInfo.getJobAndPosition()}</small>
+
         <ul style={{ marginTop: '10px' }}>
           {projects.map((item, idx) => {
             if (!Array.isArray(item)) {
