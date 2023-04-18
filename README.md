@@ -157,6 +157,25 @@
 
 ---
 
+### Experience
+
+> 경험탭은 `./src/data/experience.json`을 수정하면 된다.
+
+| columnName          | Null Able | Description                                                                                       |
+| :------------------ | :-------: | :------------------------------------------------------------------------------------------------ |
+| `experience`        |   false   | 경험여부, 무조건 빈 배열로라도 만들어 둬야한다.                                                   |
+| `companyName`       |   false   | 재직했던 회사 명                                                                                  |
+| `companyJoinDate`   |   false   | 해당 회사 입사일                                                                                  |
+| `companyResignDate` |   true    | 퇴직일, 없으면 금일날짜 기준으로 설정하며, 재직중으로 판단하여 뱃지생성함.                        |
+| `companyJob`        |   true    | 재직당시 업무 포지션 , 없으면 표현 안함                                                           |
+| `companyPosition`   |   true    | 재직당시 직위, 없으면 표현 안함                                                                   |
+| `skills[]`          |   true    | 화시에서 사용했던 기술을 나열, 없으면 표현하지는 않으며, 꼭 배열과 원소는 문자열로 표현해야 한다. |
+| `projets[]`         |   false   | 재직당시 했던 기록하고자 하는 업무들, 내부에 배열로 추가적인 리스트로 생성도 가능하다             |
+
+![Experience Sample](./readme-docs/experience.png)
+
+---
+
 ### Footer
 
 > Footer의 경우에는 해당 프로젝트 사용 Framework에 대한 기록, 내가 참고한 Resume, 내 오리지널 Github Link, 혹시나 모를 수정자의 링크정도를 담았다.
