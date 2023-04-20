@@ -5,7 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub, faBlogger, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
-import pd from 'src/data/Profile.json';
+import pd from '../data/Profile.json';
 import { Alert, Col, Row } from 'react-bootstrap';
 import { Style } from 'common/Style';
 import 'profile/Profile.css';
