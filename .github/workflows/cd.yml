@@ -20,7 +20,7 @@ jobs:
           node-version: 19.7
 
       - name: Npm Install
-        run: npm install
+        run: npm install --force
 
       - name: Npm Build
         run: npm run build
