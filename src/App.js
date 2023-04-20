@@ -5,6 +5,7 @@ import Introduce from 'introduce/Introduce';
 import Footer from 'footer/footer';
 import Skills from 'skills/Skills';
 import Experience from 'experience/Experience';
+import Educations from 'education/Education';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Introduce />
         <Skills />
         <Experience />
+        <Educations />
       </Container>
       <Footer />
     </div>
