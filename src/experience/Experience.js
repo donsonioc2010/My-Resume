@@ -1,11 +1,9 @@
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
-import { Style } from 'common/Style';
-import { Badge, Col, Row, Table } from 'react-bootstrap';
-import { StyleBlueTitleByH1AndHr, getDateYYYY_MM } from 'common/Utils';
+import { Col, Row } from 'react-bootstrap';
+import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import jsonData from 'data/Experience.json';
-import moment, { diff } from 'moment';
 import CompanyInfo from './CompanyInfo';
 import CreateCompanyInfo from './CreateCompanyInfo';
 import CreateProjects from './CreateProjects';
@@ -25,7 +23,7 @@ const store = createStore((state, action) => {
  */
 export default function Experiences() {
   if (!Array.isArray(experienceData.experience) || experienceData.experience.length === 0) {
-    return <div id="experience">Array Is Not Or undefined</div>;
+    return null;
   }
 
   return (

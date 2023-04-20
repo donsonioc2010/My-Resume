@@ -1,6 +1,4 @@
 import React from 'react';
-import { Style } from 'common/Style';
-import { Col, Row } from 'react-bootstrap';
 import CreateExperienceSkill from './CreateExperienceSkills';
 
 export default function CreateProjects(props) {

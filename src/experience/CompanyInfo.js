@@ -1,6 +1,6 @@
 import React from 'react';
-import moment, { diff } from 'moment';
-import { StyleBlueTitleByH1AndHr, getDateYYYY_MM } from 'common/Utils';
+import moment from 'moment';
+import { getDateYYYY_MM } from 'common/Utils';
 import { Badge } from 'react-bootstrap';
 
 export default class CompanyInfo {

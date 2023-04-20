@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import jsonData from 'data/Skills';
 import { Style } from 'common/Style';
-import { Badge, Col, Row, Table } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import './Skills.css';
 

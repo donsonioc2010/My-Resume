@@ -1,5 +1,3 @@
-import CompanyInfo from './CompanyInfo';
-
 export default function CreateCompanyInfo(props) {
   var companyInfo = props.info;
 

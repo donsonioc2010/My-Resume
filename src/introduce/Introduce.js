@@ -3,7 +3,6 @@ import jsonData from 'data/Introduce.json';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import { Badge, Col, Row } from 'react-bootstrap';
-import { Style } from 'common/Style';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import moment from 'moment';
 import 'moment/locale/ko';
