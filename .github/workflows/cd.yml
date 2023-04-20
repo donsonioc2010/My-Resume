@@ -19,18 +19,13 @@ jobs:
         with:
           node-version: 19.7
 
-      # Dependency Modul의 설치를 캐쉬에 진행한다.
-      # 추후 Actions의 실행시간을 줄이는데 목적
-      - name: cache node_modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: $-build-$${hashFiles('**/package-lock.json')}
-          restore-keys: |
-            $-build-$-build
-
       - name: Npm Install
         run: npm install
+
+      - name: confirm
+        run: ls ./ |
+          echo "in src"|
+          ls ./src
 
       - name: Npm Build
         run: npm run build
