@@ -1,3 +1,4 @@
+import React from 'react';
 import Contact from 'profile/Contact';
 import './App.css';
 import { Container } from 'react-bootstrap';
