@@ -48,8 +48,8 @@ function CreateEducation() {
       } = item;
       startDate = getDateYYYY_MM(startDate);
 
-      //공백이면 Row를 생성하지 않기 떄문에 return
-      if (!startDate) {
+      //시작일또는 메인 타이틀이 없는 경우 데이터가 없는 것으로 판단 Row를 생성하지 않는다.
+      if (!startDate || !titleMain) {
         return null;
       }
 
@@ -85,7 +85,7 @@ function CreateEducationRightCol({ title: { main, sub } }) {
       <h4>
         <b>{main}</b>
       </h4>
-      <small style={{ color: 'gray' }}>{sub}</small>
+      {sub ? <small style={{ color: 'gray' }}>{sub}</small> : null}
     </Col>
   );
 }
@@ -123,6 +123,7 @@ function CreateEducationLeftCol({
   };
 
   let tagRender = (tag) => {
+    if (!tag) return null;
     let result = [];
     tag.map((tag, idx) => {
       if (typeof tag === 'string') {
