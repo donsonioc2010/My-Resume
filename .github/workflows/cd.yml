@@ -9,38 +9,38 @@ jobs:
   build:
     runs-on: ubuntu-22.04 #latest라고 적어도됨.
     steps:
-      # 소스코드 Checkout
-      - name: Code Checkout
-        uses: actions/checkout@main
+      # # 소스코드 Checkout
+      # - name: Code Checkout
+      #   uses: actions/checkout@main
 
-      # Node Install, 현재 로컬과 동기화
-      - name: Set Up Node
-        uses: actions/setup-node@main
-        with:
-          node-version: 19
+      # # Node Install, 현재 로컬과 동기화
+      # - name: Set Up Node
+      #   uses: actions/setup-node@main
+      #   with:
+      #     node-version: 19
 
-      - name: Npm Install
-        run: npm install
+      # - name: Npm Install
+      #   run: npm install
 
-      # CI='false'관련, true오류문제 솔루션
-      # 1. https://velog.io/@thovy/PROJECT-Github-Action-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EC%B2%AB-%EA%B1%B8%EC%9D%8C
-      # 2. https://torbjorn.tistory.com/771
-      - name: Npm Build
-        run: npm run build
-        env:
-          CI: false
+      # # CI='false'관련, true오류문제 솔루션
+      # # 1. https://velog.io/@thovy/PROJECT-Github-Action-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EC%B2%AB-%EA%B1%B8%EC%9D%8C
+      # # 2. https://torbjorn.tistory.com/771
+      # - name: Npm Build
+      #   run: npm run build
+      #   env:
+      #     CI: false
 
-      - name: Confirm Directory
-        run: |
-          ls ./ 
-          pwd
+      # - name: Confirm Directory
+      #   run: |
+      #     ls ./
+      #     pwd
 
-      # 배포, github_token은 별도로 필요 항목은 아니다.
-      # 파일삭제가 원인으로 보여서 Docs에서 확인해본 force_orphan옵션 추가 (Default값은 False): https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-force-orphan-force_orphan
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
-          force_orphan: true
+      # # 배포, github_token은 별도로 필요 항목은 아니다.
+      # # 파일삭제가 원인으로 보여서 Docs에서 확인해본 force_orphan옵션 추가 (Default값은 False): https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-force-orphan-force_orphan
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./docs
+      #     publish_branch: gh-pages
+      #     force_orphan: true
