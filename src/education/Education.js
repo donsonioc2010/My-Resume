@@ -38,6 +38,7 @@ function CreateEducation() {
   var educations = useSelector((state) => {
     return state.list;
   });
+
   var render = () => {
     let rowResult = [];
     let index = 0;

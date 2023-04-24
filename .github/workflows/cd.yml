@@ -22,8 +22,9 @@ jobs:
       - name: Npm Install
         run: npm install
 
+      # CI='false'관련, true오류문제 솔루션 : https://velog.io/@thovy/PROJECT-Github-Action-%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%B0%B0%ED%8F%AC%EC%9D%98-%EC%B2%AB-%EA%B1%B8%EC%9D%8C
       - name: Npm Build
-        run: npm run build
+        run: CI='false'npm run build
 
       # 배포, github_token은 별도로 필요 항목은 아니다.
       - name: Deploy
