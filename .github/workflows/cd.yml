@@ -17,10 +17,10 @@ jobs:
       - name: Set Up Node
         uses: actions/setup-node@main
         with:
-          node-version: 19.7
+          node-version: 19
 
       - name: Npm Install
-        run: npm install --force
+        run: npm install
 
       - name: Npm Build
         run: npm run build
