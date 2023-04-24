@@ -30,17 +30,15 @@ jobs:
         env:
           CI: false
 
-      - name: Confirm Directory
-        run: |
-          ls ./ 
-          pwd
+      # - name: Confirm Directory
+      #   run: |
+      #     ls ./
+      #     pwd
 
-      # 배포, github_token은 별도로 필요 항목은 아니다.
-      # 파일삭제가 원인으로 보여서 Docs에서 확인해본 force_orphan옵션 추가 (Default값은 False): https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-force-orphan-force_orphan
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: publish
-          force_orphan: true
+      # # 배포, github_token은 별도로 필요 항목은 아니다.
+      # # 파일삭제가 원인으로 보여서 Docs에서 확인해본 force_orphan옵션 추가 (Default값은 False): https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-force-orphan-force_orphan
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     force_orphan: true
