@@ -2,7 +2,7 @@
   "name": "my-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://donsonioc2010.github.io/My-Resume",
+  "homepage": "/My-Resume",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BUILD_PATH='./docs' env-cmd -f .env.production react-scripts build",
+    "build": "BUILD_PATH='./docs' react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
