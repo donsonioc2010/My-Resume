@@ -26,10 +26,12 @@ jobs:
       - name: Npm Build
         run: CI='false' npm run build
 
+      - name: Confirm Directory
+        run: ls ./
+
       # 배포, github_token은 별도로 필요 항목은 아니다.
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: $
-          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
