@@ -9,7 +9,7 @@ export default function Profile() {
   return (
     <div id="pb-3 text-md-right text-center">
       <img
-        src={'img/' + imgFileName}
+        src={process.env.PUBLIC_URL + '/img/' + imgFileName}
         alt="ProfilePhoto"
         style={style}
         className="img-fluid rounded"
