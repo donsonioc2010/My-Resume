@@ -2,11 +2,13 @@ import React from 'react';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import { StyleBlueTitleByH1AndHr, getDateYYYY_MM, getDurationYearAndMonths } from 'common/Utils';
-import jsonData from 'data/Education.json';
+import jsonData from 'data/Education';
 import { Badge, Col, Row } from 'react-bootstrap';
 
+const getData = jsonData();
+
 const educationData = {
-  list: jsonData.list,
+  list: getData.list,
 };
 
 const store = createStore((state, action) => {

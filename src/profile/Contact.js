@@ -5,7 +5,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub, faBlogger, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
-import pd from '../data/Profile.json';
+import jsonData from 'data/Profile';
 import { Alert, Col, Row } from 'react-bootstrap';
 import { Style } from 'common/Style';
 import 'profile/Profile.css';
@@ -13,11 +13,13 @@ import Profile from 'profile/Profile';
 import ContactDetail from 'profile/ContactDetail';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const pd = jsonData();
+
 /**
  * 연락처 정보를 표현하기 위한 Component
  */
 
-var contactData = {
+const contactData = {
   img: pd.profile.img,
 
   name: {

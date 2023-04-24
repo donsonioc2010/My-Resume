@@ -3,14 +3,16 @@ import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import { Col, Row } from 'react-bootstrap';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
-import jsonData from 'data/Experience.json';
+import jsonData from 'data/Experience';
 import CompanyInfo from './CompanyInfo';
 import CreateCompanyInfo from './CreateCompanyInfo';
 import CreateProjects from './CreateProjects';
 import './Experience.css';
 
+const getData = jsonData();
+
 const experienceData = {
-  experience: jsonData.experience,
+  experience: getData.experience,
 };
 
 const store = createStore((state, action) => {

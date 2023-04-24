@@ -5,6 +5,10 @@ import { HrefTargetBlank } from 'common/Utils';
 import { Col, Row } from 'react-bootstrap';
 import jsonData from 'data/Footer';
 
+const getData = jsonData();
+
+console.log(getData);
+
 const footer = {
   main: {},
   cover: {
@@ -21,7 +25,7 @@ const footer = {
 };
 
 var footerData = {
-  repoUrl: jsonData.creatorGitRepo,
+  repoUrl: getData.creatorGitRepo,
 };
 
 export default function Footer() {

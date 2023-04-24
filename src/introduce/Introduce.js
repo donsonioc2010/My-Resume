@@ -1,5 +1,5 @@
 import React from 'react';
-import jsonData from 'data/Introduce.json';
+import jsonData from 'data/Introduce';
 import { createStore } from 'redux';
 import { Provider, useSelector } from 'react-redux';
 import { Badge, Col, Row } from 'react-bootstrap';
@@ -8,10 +8,12 @@ import moment from 'moment';
 import 'moment/locale/ko';
 import './Introduce.css';
 
-var introduceData = {
-  type: jsonData.type,
-  introduces: jsonData.introduces,
-  latestUpdatedAt: jsonData.latestUpdatedAt,
+const getData = jsonData();
+
+const introduceData = {
+  type: getData.type,
+  introduces: getData.introduces,
+  latestUpdatedAt: getData.latestUpdatedAt,
 };
 
 /*

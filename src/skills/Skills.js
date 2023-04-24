@@ -7,6 +7,8 @@ import { Badge, Col, Row } from 'react-bootstrap';
 import { StyleBlueTitleByH1AndHr } from 'common/Utils';
 import './Skills.css';
 
+const getData = jsonData();
+
 /**
  * {
  *  type[ {theme, list[ {title, level}]}]
@@ -14,8 +16,8 @@ import './Skills.css';
  */
 
 const skillsData = {
-  type: jsonData.type,
-  skillLayer: jsonData.skillLayer,
+  type: getData.type,
+  skillLayer: getData.skillLayer,
 };
 
 const store = createStore((state, action) => {
